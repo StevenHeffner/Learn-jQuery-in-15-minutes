@@ -3,13 +3,13 @@
 $(document).ready(function(){
 
   // BASIC SELECTORS
-  //$('*').css('border', '4px solid red');
+  // $('.box:first').css('border', '4px solid red');
 
   // BASIC ANIMATIONS
-  // $('.box:first').animate({bottom: '200px', left: '200px', }, 800);
+  // $('.box:first').animate({bottom: '200px', left: '200px', }, 2000);
 
   // INDEX FILTERS
-  // $('p:eq(2)').css('border', '4px solid red');
+  // $('.box:eq(4)').css('border', '4px solid red');
 
   // RELATIONSHIP FILTERS
   //$('.box:empty').css('border', '4px solid red');
@@ -28,10 +28,10 @@ $(function(){
   //$('p:first').attr('class', 'not-lead');
 
   // IMAGE SWAP
-  //$('img').attr('src', 'img2.jpg');
-  // $('img').delay(400).fadeOut(500, function(){
-  //   $(this).attr('src', 'img2.jpg').fadeIn(500);
-  // });
+  // $('img').attr('src', 'img2.jpg');
+  $('img').delay(1000).fadeOut(500, function(){
+    $(this).attr('src', 'img2.jpg').fadeIn(500);
+  });
 
   // CLASS METHODS
   //$('p').toggleClass('blue').removeClass('lead');
@@ -52,9 +52,9 @@ $(function(){
 
 
   // EVENT BINDING
-  // $('html').keypress(function(){
-  //   $(this).toggleClass('blue');
-  // });
+  $('html').keypress(function(){
+    $(this).toggleClass('blue');
+  });
 
 
 });
